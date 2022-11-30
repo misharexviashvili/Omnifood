@@ -39,8 +39,8 @@ body {
 .grid--4-cols {
   grid-template-columns: repeat(4, 1fr);
 }
-.grid--center-v{
-    align-items: center;
+.grid--center-v {
+  align-items: center;
 }
 .heading-primary,
 .heading-secondary,
@@ -106,4 +106,7 @@ body {
 }
 .margin-right-sm {
   margin-right: 1.6rem !important;
+}
+strong {
+  font-weight: 500;
 }
