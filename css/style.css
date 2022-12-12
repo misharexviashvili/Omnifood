@@ -414,7 +414,6 @@ Feature section
   font-size: 1.8rem;
   line-height: 1.8;
 }
-
 /* 
 ********************
 CTA section
@@ -481,8 +480,15 @@ CTA section
 .cta-form input::placeholder {
   color: #aaa;
 }
-
 .cta * :focus {
   outline: none;
   box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5);
+}
+/* 
+********************
+Footer
+********************
+*/
+.footer{
+padding: 9.6rem 0;
 }
