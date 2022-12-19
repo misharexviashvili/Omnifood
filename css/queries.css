@@ -115,8 +115,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: all 0.5s ease-in;
-    
+    transition: all 0.5s ease-out;
+
     /* display: none; Can't be animated */
     /* 1. Hide element visually */
     opacity: 0;
@@ -144,5 +144,37 @@
   .main-nav-link:link,
   .main-nav-link:visited {
     font-size: 3rem;
+  }
+}
+/* 
+  ***************************
+  Below 704px (Smaller Tablets)
+  ***************************
+*/
+@media (max-width: 44em) {
+  .grid--3-cols,
+  .grid--4-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .diets {
+    grid-column: 1/-1;
+    justify-self: center;
+  }
+  .heading-secondary {
+    margin-bottom: 4.8rem;
+  }
+  .pricing-plan {
+    width: 100%;
+  }
+  .grid--footer {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .logo-col, .adress-col{
+    grid-column: span 3;
+  }
+  .nav-col{
+    grid-row: 1;
+    grid-column: span 2;
+    margin-bottom: 3.2rem;
   }
 }
